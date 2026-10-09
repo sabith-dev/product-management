@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h3 class="mb-4">Dashboard Overview</h3>
+<div class="row g-3">
+
+    <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow-sm border-primary">
+            <div class="card-body">
+                <h6 class="text-muted">Total Products</h6>
+                <h2>{{ total_products }}</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow-sm border-success">
+            <div class="card-body">
+                <h6 class="text-muted">Active</h6>
+                <h2 class="text-success">{{ active_products }}</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow-sm border-secondary">
+            <div class="card-body">
+                <h6 class="text-muted">Inactive</h6>
+                <h2 class="text-secondary">{{ inactive_products }}</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow-sm border-warning">
+            <div class="card-body">
+                <h6 class="text-muted">Low Stock</h6>
+                <h2 class="text-warning">{{ low_stock_products }}</h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
