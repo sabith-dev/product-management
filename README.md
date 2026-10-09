@@ -116,7 +116,3 @@ This project covers all requirements from the Python/Django Developer Developmen
 - Form validation
 - Code organization
 - Git workflow with meaningful commits
-
-## License
-
-This project is created for educational and assessment purposes.

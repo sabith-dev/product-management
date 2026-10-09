@@ -26,8 +26,8 @@
           <div class="col-md-8">
             <table class="table table-sm">
               <tr><th style="width:35%">SKU</th><td>{{ product.sku }}</td></tr>
-              <tr><th>Category</th><td>{{ product.category.name|default:"—" }}</td></tr>
-              <tr><th>Description</th><td>{{ product.description|linebreaksbr|default:"—" }}</td></tr>
+              <tr><th>Category</th><td>{{ product.category.name|default:"-" }}</td></tr>
+              <tr><th>Description</th><td>{{ product.description|linebreaksbr|default:"-" }}</td></tr>
               <tr><th>Price</th><td class="fw-bold">${{ product.price }}</td></tr>
               <tr>
                 <th>Stock</th>
